@@ -134,7 +134,9 @@
     background-color: rgb(33, 141, 33);
 }
 @media (max-width: 768px) {
-
+        .bottom {
+        padding: 20px 15px;
+    }
     .top {
         height: 60vh;
     }
@@ -155,7 +157,7 @@
     .card {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: 0px;
     }
 
     .card_1,

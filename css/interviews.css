@@ -36,17 +36,13 @@
     background-color: #dfe7f5;
     color: #5d7299;
 }
+.card_1 img,
 .card_2 img{
     width: 100%;
     height: 250px;
     object-fit: cover;
     display: block;
-}
-.card_1 img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
+    object-position: top center;
 }
 .card_1,
 .card_2{
@@ -91,5 +87,18 @@
 
     .bottom h1 {
         font-size: 26px;
+    }
+}
+@media (max-width:768px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 20px;
+    }
+    .card_1,
+    .card_2{
+        width: 100%;
+        max-width: 450px;
     }
 }
