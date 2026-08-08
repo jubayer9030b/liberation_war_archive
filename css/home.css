@@ -1,0 +1,201 @@
+.top{
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+.top::before{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    inset: 0;
+    content: "";
+}
+.top>div:first-child{
+    width: 100%;
+    height: 100%;
+}
+.top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.top h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.top p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+.top button{
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px auto;
+}
+.top button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.top button:hover{
+    background-color: rgb(240, 240, 74);
+}
+.top>div:last-child{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 90%;
+    transform: translate(-50%,-50%);
+}
+
+.bottom{
+    min-height: 30vh;
+    height: auto;
+    padding: 15px 80px;
+    overflow: visible;
+}
+.bottom h1{
+    text-align: center;
+    color: green;
+    font-size: 30px;
+}
+
+.card{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 10px;
+    /* align-items: stretch; */
+}
+
+.card_1,
+.card_2,
+.card_3{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 30%;
+    padding: 15px 20px;
+    background-color: white;
+}
+
+.card_1:hover,
+.card_2:hover,
+.card_3:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.card_1 h2,
+.card_2 h2,
+.card_3 h2{
+    color: green;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card_1 p,
+.card_2 p,
+.card_3 p{
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.card_1 button,
+.card_2 button,
+.card_3 button{
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    margin: 5px auto;
+    padding: 5px;
+    display: block;
+}
+.card_1 button a,
+.card_2 button a,
+.card_3 button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.card_1 button:hover,
+.card_2 button:hover,
+.card_3 button:hover{
+    background-color: rgb(33, 141, 33);
+}
+@media (max-width: 768px) {
+
+    .top {
+        height: 60vh;
+    }
+
+    .top h1 {
+        font-size: 32px;
+    }
+
+    .top p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .top button a {
+        font-size: 16px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card_1,
+    .card_2,
+    .card_3 {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .bottom h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+
+    .navbar h1 {
+        font-size: 19px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .top {
+        height: 55vh;
+    }
+
+    .top h1 {
+        font-size: 26px;
+    }
+
+    .top p {
+        font-size: 14px;
+    }
+
+    .bottom h1 {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,128 @@
+.s1{
+    background-color:#166534;
+    padding: 70px 20px;
+}
+.s1 h1{
+    text-align: center;
+    color: white;
+}
+.s1 p{
+    text-align: center;
+    color: white;
+}
+.form h1{
+    color: green;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.s2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: #e5e7eb;
+}
+.form label{
+    display: block;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.form textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+        height: 100px;
+    resize: vertical;
+}
+.form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    box-sizing: border-box;
+}
+
+.form button{
+    width: 100%;
+    background-color: #3b7a57;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+.form button:hover {
+    background-color: #2d5e43;
+}
+
+.s2 > div:last-child {
+    width: 400px;
+    padding-top: 10px;
+}
+
+.s2 > div:last-child h1 {
+    color: #374151;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.s2 > div:last-child p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.s2 > div:last-child p strong {
+    color: #111827;
+}
+.success-msg {
+    color: #15803d;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 14px;
+}
+@media (max-width: 480px) {
+
+    .navbar h1 {
+        font-size: 19px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .top {
+        height: 55vh;
+    }
+
+    .top h1 {
+        font-size: 26px;
+    }
+
+    .top p {
+        font-size: 14px;
+    }
+
+    .bottom h1 {
+        font-size: 26px;
+    }
+}
